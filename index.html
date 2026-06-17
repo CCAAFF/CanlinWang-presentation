@@ -1,0 +1,1018 @@
+<!DOCTYPE html>
+<html lang="zh" data-lang="zh" data-theme="dark">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>王灿霖 Jason · 高频量化开发者 / HFT Quant Developer</title>
+<meta name="description" content="王灿霖（Jason）— 高频量化方向开发者，专注订单簿微观结构、DolphinDB 流式引擎与多因子回测，《AI 驱动下的高频因子挖掘》参编作者。" />
+<meta property="og:title" content="王灿霖 Jason — HFT Quant Developer" />
+<meta property="og:description" content="订单簿买卖压力差因子 · DolphinDB 流式引擎 · 多因子回测 · 25届金融科技应届生" />
+<meta property="og:type" content="website" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="css/style.css" />
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%230a0e14'/%3E%3Cpath d='M6 21l5-9 5 5 5-10 5 6' fill='none' stroke='%2336e2c4' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E" />
+</head>
+<body>
+<div class="bg-grid"></div>
+<div class="bg-glow"></div>
+
+<!-- ===== header ===== -->
+<header class="header" id="header">
+  <div class="wrap nav">
+    <a href="#top" class="brand" aria-label="home">
+      <svg width="26" height="26" viewBox="0 0 32 32" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"><path d="M5 22l6-10 5 5 5-11 6 7"/></svg>
+      <span>王灿霖<span class="tag">/jason.quant</span></span>
+    </a>
+    <nav class="nav-links">
+      <a href="#about"><span class="zh">关于</span><span class="en">About</span></a>
+      <a href="#project"><span class="zh">核心项目</span><span class="en">Project</span></a>
+      <a href="#openclaw"><span class="zh">AI 龙虾</span><span class="en">OpenClaw</span></a>
+      <a href="#experience"><span class="zh">实习经历</span><span class="en">Experience</span></a>
+      <a href="#more"><span class="zh">成果荣誉</span><span class="en">Highlights</span></a>
+      <a href="#news"><span class="zh">动态</span><span class="en">News</span></a>
+      <a href="#growth"><span class="zh">成长记录</span><span class="en">Growth CV</span></a>
+      <a href="#contact"><span class="zh">联系</span><span class="en">Contact</span></a>
+    </nav>
+    <div class="nav-actions">
+      <button class="icon-btn lang-btn" data-lang-toggle aria-label="切换语言 / switch language">EN</button>
+      <button class="icon-btn" data-theme-toggle aria-label="Switch to light mode"></button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+<!-- ===== hero ===== -->
+<section class="hero">
+  <div class="wrap">
+    <span class="hero-status reveal"><span class="dot"></span><span class="zh">北京 · 25 届应届生 · 求职高频量化相关职业</span><span class="en">Beijing · 2025 graduate · Seeking HFT quant roles</span></span>
+    <h1 class="reveal">
+      <span class="zh">王灿霖 <span class="accent">Jason</span></span>
+      <span class="en">Wang Canlin <span class="accent">/ Jason</span></span>
+    </h1>
+    <p class="hero-role mono reveal">&gt; <span class="zh">高频量化开发者 · 订单簿微观结构 · DolphinDB 流式引擎</span><span class="en">HFT Quant Developer · Order-book Microstructure · DolphinDB Streaming</span></p>
+    <p class="hero-lede reveal">
+      <span class="zh">金融科技专业 25 届应届生，专注高频量化交易。以 DolphinDB 流式引擎搭建从 CTP 行情接入、数据清洗、因子计算到回测的全链路，是《AI 驱动下的高频因子挖掘》一书的 DolphinDB 案例组长与代码作者。</span>
+      <span class="en">A 2025 FinTech graduate focused on high-frequency quant trading. I build end-to-end pipelines on the DolphinDB streaming engine — from CTP market-data ingestion to cleaning, factor computation and backtesting — and authored the DolphinDB cases &amp; code for the book "AI-Driven High-Frequency Factor Mining".</span>
+    </p>
+    <div class="hero-cta reveal">
+      <a href="#project" class="btn btn-primary"><span class="zh">查看核心项目</span><span class="en">View flagship project</span> →</a>
+      <a href="#contact" class="btn btn-ghost"><span class="zh">联系我</span><span class="en">Get in touch</span></a>
+    </div>
+    <div class="hero-stats reveal">
+      <div class="stat"><div class="num"><span>5</span></div><div class="lbl"><span class="zh">段实习经历</span><span class="en">Internships</span></div></div>
+      <div class="stat"><div class="num">DCDAA</div><div class="lbl"><span class="zh">DolphinDB 认证</span><span class="en">DolphinDB cert.</span></div></div>
+      <div class="stat"><div class="num"><span class="zh">参编</span><span class="en">Co-author</span></div><div class="lbl"><span class="zh">AI 高频因子挖掘</span><span class="en">Quant book</span></div></div>
+      <div class="stat"><div class="num">3.60<span>/4</span></div><div class="lbl"><span class="zh">本科 GPA</span><span class="en">GPA</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== about + skills ===== -->
+<section class="section" id="about">
+  <div class="wrap">
+    <div class="about-grid">
+      <div class="reveal">
+        <div class="section-head">
+          <span class="eyebrow">01 / <span class="zh">关于</span><span class="en">About</span></span>
+          <h2 class="section-title"><span class="zh">高频量化方向，从行情到回测全链路</span><span class="en">HFT-focused, full pipeline from ticks to backtest</span></h2>
+        </div>
+        <div class="about-body">
+          <p>
+            <span class="zh">我是<strong>王灿霖（Jason）</strong>，上海立信会计金融学院<strong>金融科技</strong>专业 2025 届应届生（GPA 3.60/4.00），求职意向为<strong>高频量化相关职业</strong>。</span>
+            <span class="en">I'm <strong>Wang Canlin (Jason)</strong>, a 2025 <strong>FinTech</strong> graduate from Shanghai Lixin University of Accounting and Finance (GPA 3.60/4.00), seeking <strong>high-frequency quant</strong> roles.</span>
+          </p>
+          <p>
+            <span class="zh">我在多段量化实习与毕业论文中深耕<strong>订单簿微观结构</strong>与<strong>盘口买卖压力差因子</strong>，使用 <strong>DolphinDB</strong> 接入 CTP / akshare 数据，构建数据存储、清洗、因子开发、引擎级联、流表组合、策略回测与 Grafana 可视化的完整高频量化系统。</span>
+            <span class="en">Across multiple quant internships and my thesis I focused on <strong>order-book microstructure</strong> and <strong>bid-ask pressure factors</strong>, using <strong>DolphinDB</strong> with CTP / akshare data to build a full HFT system — storage, cleaning, factor development, engine cascading, stream-table joins, strategy backtesting and Grafana visualization.</span>
+          </p>
+          <p>
+            <span class="zh">我持有 <strong>DCDAA（DolphinDB 数据分析专员）</strong>认证（证书编号 DCDAA00001），并作为 DolphinDB 案例组长参与编写《AI 驱动下的高频因子挖掘》一书。目前持续提升英语能力（四六级 / 托福），目标海外量化方向深造。</span>
+            <span class="en">I hold the <strong>DCDAA (DolphinDB Certified Data Analyst)</strong> certification (Cert. No. DCDAA00001) and co-authored the DolphinDB cases &amp; code for the book "AI-Driven High-Frequency Factor Mining". I'm strengthening my English (CET-4/6, TOEFL) toward overseas quant programs.</span>
+          </p>
+
+          <div class="social-badges">
+            <a class="sbadge" href="https://github.com/CCAAFF" target="_blank" rel="noopener">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.7.5.5 5.7.5 12c0 5.1 3.3 9.4 7.9 10.9.6.1.8-.2.8-.5v-1.8c-3.2.7-3.9-1.5-3.9-1.5-.5-1.3-1.3-1.7-1.3-1.7-1.1-.7.1-.7.1-.7 1.2.1 1.8 1.2 1.8 1.2 1 1.8 2.7 1.3 3.4 1 .1-.8.4-1.3.8-1.6-2.6-.3-5.3-1.3-5.3-5.7 0-1.3.5-2.3 1.2-3.1-.1-.3-.5-1.5.1-3.1 0 0 1-.3 3.3 1.2a11.4 11.4 0 0 1 6 0C17.3 4.6 18.3 5 18.3 5c.6 1.6.2 2.8.1 3.1.8.8 1.2 1.8 1.2 3.1 0 4.4-2.7 5.4-5.3 5.7.4.4.8 1.1.8 2.2v3.3c0 .3.2.6.8.5 4.6-1.5 7.9-5.8 7.9-10.9C23.5 5.7 18.3.5 12 .5z"/></svg>
+              GitHub
+            </a>
+            <a class="sbadge" href="mailto:caiyunjianm@163.com">
+              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+              Email
+            </a>
+            <span class="sbadge sbadge-open"><span class="odot"></span><span class="zh">开放量化岗位机会</span><span class="en">Open to quant roles</span></span>
+          </div>
+        </div>
+      </div>
+
+      <div class="about-right">
+      <div class="skill-card reveal">
+        <div class="skill-group">
+          <h4><span class="zh">核心技术栈</span><span class="en">Core stack</span></h4>
+          <div class="chips">
+            <span class="chip hi">DolphinDB</span><span class="chip hi">Python</span><span class="chip">C++</span><span class="chip">MySQL</span><span class="chip">R</span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4><span class="zh">量化与数据</span><span class="en">Quant &amp; data</span></h4>
+          <div class="chips">
+            <span class="chip"><span class="zh">订单簿微观结构</span><span class="en">Order-book microstructure</span></span>
+            <span class="chip"><span class="zh">买卖压力差因子</span><span class="en">Bid-ask pressure factors</span></span>
+            <span class="chip"><span class="zh">流式引擎 / 引擎级联</span><span class="en">Streaming / engine cascade</span></span>
+            <span class="chip"><span class="zh">策略回测</span><span class="en">Backtesting</span></span>
+            <span class="chip"><span class="zh">AI 因子挖掘</span><span class="en">AI factor mining</span></span>
+            <span class="chip"><span class="zh">时序预测</span><span class="en">Time-series</span></span>
+          </div>
+        </div>
+        <div class="skill-group">
+          <h4><span class="zh">库与工具</span><span class="en">Libraries &amp; tools</span></h4>
+          <div class="chips">
+            <span class="chip">CTP-API</span><span class="chip">akshare</span><span class="chip">Grafana</span><span class="chip">NumPy / pandas</span><span class="chip">scipy / statsmodels</span><span class="chip">TensorFlow / sklearn</span><span class="chip">Git</span><span class="chip">VeighNa</span><span class="chip">Wind / iFinD</span>
+          </div>
+        </div>
+      </div>
+
+      <figure class="cert-showcase reveal">
+        <a href="assets/dcdaa_cert.jpg" target="_blank" rel="noopener" aria-label="查看 DolphinDB 证书大图 / View full certificate">
+          <img src="assets/dcdaa_cert.jpg" alt="DolphinDB Certification 证书 — 王灿霖 DolphinDB Certified Data Analytics Associate，证书编号 DCDAA00001，2024年03月13日" loading="lazy" />
+        </a>
+        <figcaption>
+          <span class="cert-show-title"><span class="zh">DCDAA · DolphinDB 数据分析专员认证</span><span class="en">DCDAA · DolphinDB Certified Data Analytics Associate</span></span>
+          <span class="cert-show-no mono"><span class="zh">证书编号 No. DCDAA00001 · 2024.03.13</span><span class="en">Certification No. DCDAA00001 · 2024.03.13</span></span>
+        </figcaption>
+      </figure>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ===== flagship project ===== -->
+<section class="section" id="project">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">02 / <span class="zh">核心项目</span><span class="en">Flagship project</span></span>
+      <h2 class="section-title"><span class="zh">基于流式引擎的订单簿买卖压力差量化策略</span><span class="en">Order-book bid-ask pressure strategy on a streaming engine</span></h2>
+      <p><span class="zh">2025 届本科毕业论文 · 指导老师 池文涛 · 上海立信会计金融学院金融科技学院</span><span class="en">2025 undergraduate thesis · Advisor: Chi Wentao · Shanghai Lixin University of Accounting and Finance</span></p>
+    </div>
+
+    <div class="proj-feature reveal">
+      <p class="proj-feature-lede">
+        <span class="zh">使用 DolphinDB 通过 CTP 接入上期所 Simnow 实时行情，获取单档盘口 Snapshot 高频数据，构建 WAP、Dij、Wi、Press 等盘口量价因子并进行 @jit 化与引擎级联，用响应式计算引擎实时识别盘口买卖压力，并完成趋势交易策略的回测与结果分析。</span>
+        <span class="en">Using DolphinDB, I ingest Shanghai Futures Exchange (Simnow via CTP) real-time snapshots, derive order-book factors — WAP, Dij, Wi, Press — with @jit compilation and engine cascading, then use a reactive compute engine to detect bid-ask pressure in real time and backtest a trend strategy with full result analysis.</span>
+      </p>
+      <div class="proj-feature-tags">
+        <span>DolphinDB</span><span>CTP / Simnow</span><span>order-book</span><span>WAP · Dij · Wi · Press</span><span>reactive-engine</span><span>backtest</span>
+      </div>
+    </div>
+
+    <div class="thesis-grid reveal">
+      <div class="thesis-card">
+        <h3 class="mono">// <span class="zh">因子构建链路</span><span class="en">Factor pipeline</span></h3>
+        <ul class="thesis-list">
+          <li><code>WAP</code> <span class="zh">加权平均价格，逐档 L1→L5 五档构建</span><span class="en">weighted avg price, built across 5 levels L1→L5</span></li>
+          <li><code>DIj</code> <span class="zh">深度不平衡，取值 [-1,+1]，作领先指标</span><span class="en">depth imbalance, range [-1,+1], a leading indicator</span></li>
+          <li><code>wi</code> <span class="zh">买卖权重，二阶因子</span><span class="en">bid-ask weight, 2nd-order factor</span></li>
+          <li><code>Press</code> <span class="zh">买卖压力差 = log(BidPress) − log(AskPress)</span><span class="en">pressure = log(BidPress) − log(AskPress)</span></li>
+          <li><code>pressDItanh</code> <span class="zh">最终因子，经 tanh 压缩至 [-1,+1]</span><span class="en">final factor, tanh-compressed to [-1,+1]</span></li>
+        </ul>
+      </div>
+      <div class="thesis-card">
+        <h3 class="mono">// <span class="zh">原始模型的四点修正</span><span class="en">Four model fixes</span></h3>
+        <ul class="thesis-list">
+          <li><span class="zh">分母为零风险 → 线性 / 绝对值权重 + 极小常数 ε</span><span class="en">zero-denominator risk → linear / abs weights + ε</span></li>
+          <li><span class="zh">数值敏感性 → 非线性指数衰减 exp(−λ|Price−WAP|+ε)</span><span class="en">numeric sensitivity → exp(−λ|Price−WAP|+ε) decay</span></li>
+          <li><span class="zh">买卖非对称性 → max / min 权重分别处理</span><span class="en">bid-ask asymmetry → separate max / min weights</span></li>
+          <li><span class="zh">输出区间 → tanh 压缩，提升可解释性</span><span class="en">output range → tanh compression for interpretability</span></li>
+        </ul>
+      </div>
+      <div class="thesis-card">
+        <h3 class="mono">// <span class="zh">交易规则（三态）</span><span class="en">Trading rule (3 states)</span></h3>
+        <ul class="thesis-list">
+          <li><span class="zh"><code>pressDItanh &gt; +0.5</code> → 多头 / Long (+1)</span><span class="en"><code>pressDItanh &gt; +0.5</code> → Long (+1)</span></li>
+          <li><span class="zh"><code>−0.5 ~ +0.5</code> → 空仓 / Flat (0)</span><span class="en"><code>−0.5 ~ +0.5</code> → Flat (0)</span></li>
+          <li><span class="zh"><code>pressDItanh &lt; −0.5</code> → 空头 / Short (−1)</span><span class="en"><code>pressDItanh &lt; −0.5</code> → Short (−1)</span></li>
+          <li><span class="zh">数据：上期所 SimNow Tick；环境 Windows + WSL2 + CTP 插件 + DolphinDB</span><span class="en">Data: SHFE SimNow Tick; env Windows + WSL2 + CTP plugin + DolphinDB</span></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="bt-grid reveal">
+      <div class="bt-head">
+        <span class="zh">回测结果 — 97 只高频期货，每只分配 ¥10,000,000</span>
+        <span class="en">Backtest — 97 HF futures, ¥10,000,000 allocated each</span>
+      </div>
+      <div class="bt-cards">
+        <div class="bt-card bt-up">
+          <span class="bt-tag mono zh">上涨案例</span><span class="bt-tag mono en">rising case</span>
+          <span class="bt-sym mono">FG505</span>
+          <div class="bt-metrics">
+            <div><strong>+11.2%</strong><span class="zh">一日总收益</span><span class="en">1-day return</span></div>
+            <div><strong>2.945%</strong><span class="zh">最大回撤</span><span class="en">max drawdown</span></div>
+            <div><strong>0.0882</strong><span class="zh">夏普</span><span class="en">Sharpe</span></div>
+          </div>
+        </div>
+        <div class="bt-card bt-down">
+          <span class="bt-tag mono zh">下跌案例</span><span class="bt-tag mono en">falling case</span>
+          <span class="bt-sym mono">ag2509</span>
+          <div class="bt-metrics">
+            <div><strong>−20.267%</strong><span class="zh">一日收益</span><span class="en">1-day return</span></div>
+            <div><strong>21.6%</strong><span class="zh">最大回撤</span><span class="en">max drawdown</span></div>
+            <div><strong>0.00203</strong><span class="zh">夏普</span><span class="en">Sharpe</span></div>
+          </div>
+        </div>
+      </div>
+      <p class="bt-note mono">
+        <span class="zh">// 高风险高收益，因子在不同品种表现差异显著；单日窗口使年化数据失真，结论指向需长周期数据积累与按夏普分配资金的风控改进</span>
+        <span class="en">// High-risk / high-reward; factor behaves very differently across instruments. The 1-day window distorts annualized figures — conclusion calls for longer data accumulation and Sharpe-weighted capital allocation</span>
+      </p>
+    </div>
+
+    <figure class="figure reveal">
+      <img src="assets/flowchart.png" alt="本地 DolphinDB 运行程序流程图：DolphinDB 注册与启动 / CTP 连接器 → 流数据清洗 → 数据引擎计算 → WAP·Press·Dlj·tanh 因子 → 计算因子库 → 生成买卖指标 → 回测系统（可用付费 CEP） → 回测计算引擎 → 回测结果分析；左侧含 CTP 实时数据插件订阅与回放数据组件 Tick→Replay→异构流数据表" loading="lazy" />
+      <figcaption><span class="zh">本地 DolphinDB 运行程序流程图 — 数据库部分（CTP 实时/本地数据表、清洗表、因子库、回测结果存储）与计算流程（注册启动 → CTP 连接器 → 流清洗 → 数据引擎 → 因子计算 → 买卖指标 → 回测 → 结果分析），并由回放数据组件（Tick → Replay → 异构流数据表）驱动事件监听</span><span class="en">Local DolphinDB pipeline — a database layer (CTP live/local tables, cleaned tables, factor library, backtest storage) and a compute flow (register & launch → CTP connector → stream cleaning → data engine → factor compute → bid-ask signals → backtest → analysis), driven by a replay component (Tick → Replay → heterogeneous stream table) via event listeners</span></figcaption>
+    </figure>
+
+    <p class="shots-note mono reveal">
+      <span class="zh">// 以下为实际运行动图（GIF），完整演示从数据获取、清洗、因子计算到回测的全过程</span>
+      <span class="en">// Animated run captures (GIF) showing the full flow from data acquisition through cleaning, factor compute and backtest</span>
+    </p>
+    <div class="carousel gif-carousel reveal" data-carousel>
+      <button class="carousel-btn prev" data-prev aria-label="上一张 / Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="carousel-btn next" data-next aria-label="下一张 / Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+      <div class="carousel-viewport">
+        <div class="carousel-track" data-track>
+          <div class="carousel-slide">
+            <figure>
+              <img src="assets/01-数据获取运行展示.gif" alt="DolphinDB 数据获取运行展示，CTP 行情数据表" loading="lazy" />
+              <figcaption><span class="zh">① 数据获取 — CTP 行情接入与实时建表</span><span class="en">① Data acquisition — CTP ingestion &amp; live tables</span></figcaption>
+            </figure>
+          </div>
+          <div class="carousel-slide">
+            <figure>
+              <img src="assets/02-数据清洗展示.gif" alt="DolphinDB 数据清洗展示，清洗逻辑与表结构" loading="lazy" />
+              <figcaption><span class="zh">② 数据清洗展示 — 清洗逻辑与流表结构</span><span class="en">② Cleaning overview — logic &amp; stream-table schema</span></figcaption>
+            </figure>
+          </div>
+          <div class="carousel-slide">
+            <figure>
+              <img src="assets/03-数据清洗运行.gif" alt="DolphinDB 数据清洗运行，流式数据规整" loading="lazy" />
+              <figcaption><span class="zh">③ 数据清洗运行 — 流式数据实时规整</span><span class="en">③ Cleaning in action — real-time stream normalization</span></figcaption>
+            </figure>
+          </div>
+          <div class="carousel-slide">
+            <figure>
+              <img src="assets/04-因子运算运行展示.gif" alt="DolphinDB 因子运算运行展示，盘口压力差因子" loading="lazy" />
+              <figcaption><span class="zh">④ 因子运算 — 盘口压力差因子实时计算</span><span class="en">④ Factor compute — live bid-ask pressure factors</span></figcaption>
+            </figure>
+          </div>
+          <div class="carousel-slide">
+            <figure>
+              <img src="assets/05-最终回测结果运行展示.gif" alt="DolphinDB 最终回测结果运行展示，策略表现与结果表" loading="lazy" />
+              <figcaption><span class="zh">⑤ 最终回测结果 — 策略表现与结果表</span><span class="en">⑤ Final backtest — strategy results &amp; output tables</span></figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-nav">
+        <div class="carousel-dots" data-dots></div>
+        <span class="carousel-count" data-count></span>
+      </div>
+    </div>
+
+    <p class="proj-note mono reveal">
+      <span class="zh">// 该项目代码为《AI 驱动下的高频因子挖掘》一书部分内容，完整代码将随图书发布</span>
+      <span class="en">// Code is part of the book "AI-Driven High-Frequency Factor Mining"; full code releases with the book</span>
+    </p>
+  </div>
+</section>
+
+<!-- ===== openclaw / AI 龙虾 ===== -->
+<section class="section openclaw-sec" id="openclaw">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">🦞 / <span class="zh">AI 龙虾 · OpenClaw 多智能体网关</span><span class="en">AI Lobster · OpenClaw multi-agent gateway</span></span>
+      <h2 class="section-title"><span class="zh">把量化全链路交给一群专精的 AI 智能体</span><span class="en">Handing the full quant pipeline to a team of specialist AI agents</span></h2>
+      <p class="section-lede"><span class="zh">在本地用 <strong>OpenClaw（🦞）</strong>自建一套统一 LLM 网关 + 工具集成层：把 DeepSeek、腾讯混元、Kimi 等多家模型统一挂在 <code>models.providers</code> 下，再通过自定义 <code>exec</code> 工具让模型以受限权限调用我的 DolphinDB / Python 因子与回测管线。围绕「未来量化交易智慧馆」的设定，我把它拆成五个专精角色分工协作 —— 调度中枢、数据、模型/信号、风控、情报，由 Leader_AlphaWang 调度中枢串起整条流水线。</span><span class="en">A self-hosted unified LLM gateway + tool layer built on <strong>OpenClaw (🦞)</strong>: multiple providers (DeepSeek, Tencent Hunyuan, Kimi…) mounted under <code>models.providers</code>, with custom <code>exec</code> tools that let models call my DolphinDB / Python factor &amp; backtest pipeline under limited permissions. Framed as a "future quant trading guild", it splits into five specialist roles — orchestrator, data, model/signal, risk, intelligence — strung together by the Leader_AlphaWang hub end to end.</span></p>
+    </div>
+
+    <div class="carousel agent-carousel reveal" data-carousel>
+      <button class="carousel-btn prev" data-prev aria-label="上一位 / Previous"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M15 18l-6-6 6-6"/></svg></button>
+      <button class="carousel-btn next" data-next aria-label="下一位 / Next"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M9 18l6-6-6-6"/></svg></button>
+      <div class="carousel-viewport">
+        <div class="carousel-track" data-track>
+          <div class="carousel-slide">
+            <figure class="agent agent-strategy">
+              <img src="assets/agent_strategy.jpg" alt="调度中枢智能体 Leader_AlphaWang — 任务拆解、分发、验收、汇总" loading="lazy" />
+              <figcaption>
+                <span class="agent-role mono">① Leader_AlphaWang · <span class="zh">调度中枢</span><span class="en">Orchestrator</span></span>
+                <span class="agent-desc"><span class="zh">策略统筹 · 拆解 → 分发 → 验收 → 汇总 · Alpha 收益 · 仓位管理 · 模型上线</span><span class="en">Strategy lead · decompose → dispatch → review → consolidate · Alpha · position mgmt · go-live</span></span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="carousel-slide">
+            <figure class="agent agent-data">
+              <img src="assets/agent_data.jpg" alt="数据工程智能体 DolphinDB_TideEngineer — 数据管道、高频数据、JIT 因子、DolphinDB" loading="lazy" />
+              <figcaption>
+                <span class="agent-role mono">② DolphinDB_TideEngineer · <span class="zh">数据工程</span><span class="en">Data engineering</span></span>
+                <span class="agent-desc"><span class="zh">高频量化数据工程 · 清洗 → 标准化 → 可复现输出 · JIT 因子 · DolphinDB 接入上线</span><span class="en">HF data engineering · clean → standardize → reproducible output · JIT factors · DolphinDB</span></span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="carousel-slide">
+            <figure class="agent agent-signal">
+              <img src="assets/agent_signal.jpg" alt="AI 模型与信号智能体 AI_NexusSignal — 小波分解 CWT、VMD、LSTM、AI 预测" loading="lazy" />
+              <figcaption>
+                <span class="agent-role mono">③ AI_NexusSignal · <span class="zh">模型 &amp; 信号</span><span class="en">Model &amp; signal</span></span>
+                <span class="agent-desc"><span class="zh">AI 模型训练 &amp; 信号 · 训练 → 预测 → 信号输出 · 小波分解 CWT · VMD · LSTM</span><span class="en">AI training &amp; signal · train → predict → emit · CWT wavelets · VMD · LSTM</span></span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="carousel-slide">
+            <figure class="agent agent-risk">
+              <img src="assets/agent_risk.jpg" alt="风控审查智能体 Risk_AegisGuard — 回撤监控、Sharpe、风险筛选、独立审批" loading="lazy" />
+              <figcaption>
+                <span class="agent-role mono">④ Risk_AegisGuard · <span class="zh">风控审查</span><span class="en">Risk review</span></span>
+                <span class="agent-desc"><span class="zh">独立评估 → 审批 → 风险报告 · 回撤监控 · Sharpe · 输出 APPROVED / CONDITIONAL / REJECTED</span><span class="en">Independent eval → approve → report · drawdown · Sharpe · APPROVED / CONDITIONAL / REJECTED</span></span>
+              </figcaption>
+            </figure>
+          </div>
+          <div class="carousel-slide">
+            <figure class="agent agent-intel">
+              <img src="assets/agent_intel.jpg" alt="情报搜索智能体 Intel_SigmaScout — Arxiv 论文追踪、关键词研报筛选、全球情报" loading="lazy" />
+              <figcaption>
+                <span class="agent-role mono">⑤ Intel_SigmaScout · <span class="zh">情报搜索</span><span class="en">Intelligence</span></span>
+                <span class="agent-desc"><span class="zh">情报搜集 → 过滤 → 分类 · Arxiv 论文追踪 · 关键词 / 研报筛选 · 全球情报精准推送</span><span class="en">Gather → filter → classify · Arxiv tracking · keyword / report screening · global intel push</span></span>
+              </figcaption>
+            </figure>
+          </div>
+        </div>
+      </div>
+      <div class="carousel-nav">
+        <div class="carousel-dots" data-dots></div>
+        <span class="carousel-count" data-count></span>
+      </div>
+    </div>
+
+    <div class="oc-grid">
+      <article class="oc-card reveal">
+        <h3 class="mono">// <span class="zh">统一网关</span><span class="en">Unified gateway</span></h3>
+        <p><span class="zh">Gateway 默认监听 <code>18789</code> 端口并自带 Web Control UI；<code>models.mode = merge</code> 合并多家模型，按任务用 <code>openclaw models set</code> 在 DeepSeek / 混元 / Kimi 间切换。</span><span class="en">The gateway listens on <code>18789</code> with a built-in Control UI; <code>models.mode = merge</code> combines providers, switching between DeepSeek / Hunyuan / Kimi per task via <code>openclaw models set</code>.</span></p>
+      </article>
+      <article class="oc-card reveal">
+        <h3 class="mono">// <span class="zh">自定义 exec 工具</span><span class="en">Custom exec tools</span></h3>
+        <p><span class="zh">在 <code>tools.exec</code> 下封装专用脚本，把 DolphinDB / Python 的因子计算与回测包成固定入口参数，给 LLM 有限权限访问数据管线；<code>tools.exec.security = full</code> 启用严格沙箱。</span><span class="en">Under <code>tools.exec</code> I wrap DolphinDB / Python factor &amp; backtest scripts behind fixed entry params so the LLM gets scoped pipeline access; <code>tools.exec.security = full</code> enables a strict sandbox.</span></p>
+      </article>
+      <article class="oc-card reveal">
+        <h3 class="mono">// <span class="zh">反向代理 &amp; 配对</span><span class="en">Reverse proxy &amp; pairing</span></h3>
+        <p><span class="zh">用 Nginx 终止 HTTPS 并转发到 <code>127.0.0.1:18789</code>，<code>allowedOrigins</code> 精确到内网 IP；浏览器访问需 token 配对授权，<code>devices approve</code> 批准设备后方可接入。</span><span class="en">Nginx terminates HTTPS and forwards to <code>127.0.0.1:18789</code>; <code>allowedOrigins</code> is pinned to the LAN; browser access requires token pairing, approved via <code>devices approve</code>.</span></p>
+      </article>
+    </div>
+
+    <div class="orch reveal">
+      <h3 class="orch-title mono">// <span class="zh">五智能体编排与调度逻辑</span><span class="en">Five-agent orchestration &amp; scheduling logic</span></h3>
+
+      <div class="orch-flow">
+        <div class="orch-node orch-user">
+          <span class="orch-k zh">用户 / 团队</span><span class="orch-k en">User / Team</span>
+          <span class="orch-v zh">下达研究需求</span><span class="orch-v en">submit research request</span>
+        </div>
+        <div class="orch-arrow" aria-hidden="true">↓</div>
+        <div class="orch-node orch-leader">
+          <span class="orch-k">Leader_AlphaWang</span>
+          <span class="orch-v zh">调度中枢 · 拆解 → 分发 → 验收 → 汇总</span><span class="orch-v en">orchestrator · decompose → dispatch → review → consolidate</span>
+        </div>
+        <div class="orch-arrow" aria-hidden="true">↓</div>
+        <div class="orch-row">
+          <div class="orch-node orch-intel">
+            <span class="orch-k">Intel_SigmaScout</span>
+            <span class="orch-v zh">情报：搜集 → 过滤 → 分类</span><span class="orch-v en">intel: gather → filter → classify</span>
+          </div>
+          <div class="orch-node orch-data">
+            <span class="orch-k">DolphinDB_TideEngineer</span>
+            <span class="orch-v zh">数据：清洗 → 标准化 → 可复现</span><span class="orch-v en">data: clean → standardize → reproducible</span>
+          </div>
+          <div class="orch-node orch-signal">
+            <span class="orch-k">AI_NexusSignal</span>
+            <span class="orch-v zh">模型：训练 → 预测 → 信号</span><span class="orch-v en">model: train → predict → signal</span>
+          </div>
+        </div>
+        <div class="orch-arrow" aria-hidden="true">↓</div>
+        <div class="orch-node orch-join">
+          <span class="orch-k zh">联合研究产出</span><span class="orch-k en">Joint research output</span>
+          <span class="orch-v zh">TideEngineer 数据 + NexusSignal 信号</span><span class="orch-v en">TideEngineer data + NexusSignal signal</span>
+        </div>
+        <div class="orch-arrow" aria-hidden="true">↓</div>
+        <div class="orch-node orch-risk">
+          <span class="orch-k">Risk_AegisGuard</span>
+          <span class="orch-v zh">风控审查 · 独立评估 → 审批 · 输出 APPROVED / CONDITIONAL / REJECTED</span><span class="orch-v en">risk review · independent eval → approve · APPROVED / CONDITIONAL / REJECTED</span>
+        </div>
+        <div class="orch-arrow" aria-hidden="true">↓</div>
+        <div class="orch-node orch-leader">
+          <span class="orch-k zh">Leader_AlphaWang · 汇总统筹</span><span class="orch-k en">Leader_AlphaWang · consolidate</span>
+          <span class="orch-v zh">→ 最终交付</span><span class="orch-v en">→ final delivery</span>
+        </div>
+      </div>
+
+      <div class="orch-cfg">
+        <div class="cfg-card">
+          <span class="cfg-head">📡 <span class="zh">飞书</span><span class="en">Feishu</span></span>
+          <span class="cfg-state cfg-off zh">已配置 · 未连接</span><span class="cfg-state cfg-off en">configured · disconnected</span>
+          <span class="cfg-detail zh">5 个飞书应用账号</span><span class="cfg-detail en">5 Feishu app accounts</span>
+        </div>
+        <div class="cfg-card">
+          <span class="cfg-head">💬 <span class="zh">微信</span><span class="en">WeChat</span></span>
+          <span class="cfg-state cfg-on zh">已接入 ✅</span><span class="cfg-state cfg-on en">active ✅</span>
+          <span class="cfg-detail zh">当前主用消息通道</span><span class="cfg-detail en">primary message channel</span>
+        </div>
+        <div class="cfg-card">
+          <span class="cfg-head">🔌 <span class="zh">模型 API</span><span class="en">Model API</span></span>
+          <span class="cfg-detail mono">siliconflow → DeepSeek V3</span>
+          <span class="cfg-detail mono">cherry-deepseek → DeepSeek V4</span>
+          <span class="cfg-detail mono zh">本地逆向 API → Perplexity / GPT / Claude</span><span class="cfg-detail mono en">local reverse API → Perplexity / GPT / Claude</span>
+        </div>
+      </div>
+    </div>
+
+    <p class="proj-note mono reveal">
+      <span class="zh">// 设计思路：以「统一 LLM 网关 + 工具集成层」为中枢，让模型只能通过受控入口触碰真实交易管线 —— 既能多模型协作，又把执行权限牢牢攥在自己手里</span>
+      <span class="en">// Design idea: a "unified LLM gateway + tool layer" as the hub, where models touch the real trading pipeline only through controlled entry points — multi-model collaboration with execution permissions kept firmly in hand</span>
+    </p>
+  </div>
+</section>
+
+<!-- ===== experience ===== -->
+<section class="section" id="experience">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">03 / <span class="zh">实习经历</span><span class="en">Experience</span></span>
+      <h2 class="section-title"><span class="zh">量化研究与数据工程实习</span><span class="en">Quant research &amp; data-engineering internships</span></h2>
+    </div>
+    <div class="timeline">
+
+      <div class="tl-item cur reveal">
+        <div class="tl-date">2024.10 — 2025.09</div>
+        <div class="tl-role"><span class="zh">量化交易实习生</span><span class="en">Quant trading intern</span></div>
+        <div class="tl-org"><span class="zh">上海禧泓资产管理有限公司</span><span class="en">Shanghai Xihong Asset Management</span><span class="badge"><span class="zh">上海</span><span class="en">Shanghai</span></span></div>
+        <ul class="tl-desc">
+          <li><span class="zh">DolphinDB 回测框架开发：接入 akshare 数据，实现数据存储、清洗、因子开发、引擎级联、流表组合、策略回测与 Grafana 展示全链路，支持有/无状态因子的滑动与累计计算。</span><span class="en">Built a DolphinDB backtesting framework on akshare data — storage, cleaning, factor dev, engine cascading, stream-table joins, backtesting and Grafana dashboards; supports stateful/stateless rolling &amp; cumulative factor computation.</span></li>
+          <li><span class="zh">AI 因子挖掘：用 Python（seaborn / scipy / statsmodels）搭建 AI 因子挖掘框架，覆盖轴定义、标签化、特征工程、回测、模型训练与组合，为公司 AI 因子方向打下 0→1 基础。</span><span class="en">Stood up an AI factor-mining framework (seaborn / scipy / statsmodels): axis definition, labeling, feature engineering, backtest, model training &amp; ensembling — the firm's 0→1 foundation for AI factors.</span></li>
+        </ul>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-date">2024.04 — 2024.07</div>
+        <div class="tl-role"><span class="zh">供应链金融实习生</span><span class="en">Supply-chain finance intern</span></div>
+        <div class="tl-org"><span class="zh">蓝格赛电气有限公司</span><span class="en">Langesai Electric</span><span class="badge"><span class="zh">上海</span><span class="en">Shanghai</span></span></div>
+        <ul class="tl-desc">
+          <li><span class="zh">RPA 无人化开发：用 Power Automate、Quick Macro 设计调试全流程，交付 2 个全脱管 RPA 机器人。</span><span class="en">RPA automation with Power Automate &amp; Quick Macro; delivered 2 fully unattended RPA bots.</span></li>
+          <li><span class="zh">网络爬虫：用 BeautifulSoup / requests 模拟并采集 23 个网站近万条数据，为决策提供基础数据。</span><span class="en">Web data collection across 23 sites (BeautifulSoup / requests), ~10k records to support decisions.</span></li>
+        </ul>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-date">2023.11 — 2024.02</div>
+        <div class="tl-role"><span class="zh">量化交易实习生</span><span class="en">Quant trading intern</span></div>
+        <div class="tl-org"><span class="zh">南华期货股份有限公司</span><span class="en">Nanhua Futures</span><span class="badge"><span class="zh">上海</span><span class="en">Shanghai</span></span></div>
+        <ul class="tl-desc">
+          <li><span class="zh">参与多个量化策略研究，使用 Python 构建策略回测与优化。</span><span class="en">Researched multiple quant strategies; built backtests and optimization in Python.</span></li>
+          <li><span class="zh">负责股票数据分析与清洗，加深量化数据清洗方向的实践。</span><span class="en">Owned equity data analysis &amp; cleaning, deepening quant data-cleaning practice.</span></li>
+        </ul>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-date">2023.08 — 2023.10</div>
+        <div class="tl-role"><span class="zh">战略分析实习生</span><span class="en">Strategy analysis intern</span></div>
+        <div class="tl-org"><span class="zh">中国石油财务公司</span><span class="en">CNPC Finance</span><span class="badge"><span class="zh">北京</span><span class="en">Beijing</span></span></div>
+        <ul class="tl-desc">
+          <li><span class="zh">参与恒生项目组对中油财务的战略分析，调研集团及子公司业务范畴与服务细节。</span><span class="en">Supported strategy analysis (Hundsun project team) — business scope &amp; service mapping across group entities.</span></li>
+        </ul>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-date">2023.01 — 2023.03</div>
+        <div class="tl-role"><span class="zh">数据分析实习生</span><span class="en">Data analysis intern</span></div>
+        <div class="tl-org"><span class="zh">中金鼎茂电子商务有限公司</span><span class="en">Zhongjin Dingmao E-commerce</span><span class="badge"><span class="zh">北京</span><span class="en">Beijing</span></span></div>
+        <ul class="tl-desc">
+          <li><span class="zh">时序预测：用 iFinD 取数，借助 statsmodels 时序库与 numpy/pandas 建模识别趋势、模式与关联，并用 R 做数据挖掘。</span><span class="en">Time-series forecasting with iFinD data, statsmodels + numpy/pandas modeling for trends &amp; correlations; data mining in R.</span></li>
+        </ul>
+      </div>
+
+      <div class="tl-item reveal">
+        <div class="tl-date">2021.09 — 2025.06</div>
+        <div class="tl-role"><span class="zh">金融科技 · 本科 (GPA 3.60/4.00)</span><span class="en">FinTech · B.S. (GPA 3.60/4.00)</span></div>
+        <div class="tl-org"><span class="zh">上海立信会计金融学院</span><span class="en">Shanghai Lixin University of Accounting and Finance</span></div>
+        <ul class="tl-desc">
+          <li><span class="zh">核心课程：量化投资科学与技术、金融大数据、Python 量化交易与组合管理、金融衍生品交易、应用回归分析。</span><span class="en">Key courses: quant investing, financial big data, Python quant trading &amp; portfolio management, derivatives, applied regression.</span></li>
+        </ul>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== highlights ===== -->
+<section class="section" id="more">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">04 / <span class="zh">成果与荣誉</span><span class="en">Highlights</span></span>
+      <h2 class="section-title"><span class="zh">著作、竞赛与认证</span><span class="en">Publications, competitions &amp; certifications</span></h2>
+    </div>
+    <div class="cards">
+
+      <article class="card reveal">
+        <span class="card-tag"><span class="zh">参编著作</span><span class="en">Book</span></span>
+        <h3><span class="zh">《AI 驱动下的高频因子挖掘》</span><span class="en">AI-Driven High-Frequency Factor Mining</span></h3>
+        <p><span class="zh">担任 DolphinDB 案例组长，负责从 0 到 1 的案例解析并编写书中全部 DolphinDB 代码，使用 Git 进行版本管理。</span><span class="en">DolphinDB case lead — built the 0→1 case studies and authored all DolphinDB code, managed with Git.</span></p>
+      </article>
+
+      <article class="card reveal">
+        <span class="card-tag"><span class="zh">学术论文</span><span class="en">Paper</span></span>
+        <h3><span class="zh">高校微信公众平台诚信教育研究</span><span class="en">Integrity education on campus platforms</span></h3>
+        <p><span class="zh">第二作者。国际 ISSN 2705-0890，国内 CN 32-0034。</span><span class="en">Second author. ISSN 2705-0890 / CN 32-0034.</span></p>
+      </article>
+
+      <article class="card reveal">
+        <span class="card-tag"><span class="zh">认证</span><span class="en">Certification</span></span>
+        <h3><span class="zh">DCDAA · DolphinDB 数据分析专员</span><span class="en">DCDAA · DolphinDB Certified Analyst</span></h3>
+        <span class="cert-trigger" tabindex="0">
+          <a class="cert-no mono" href="assets/dcdaa_cert.jpg" target="_blank" rel="noopener"><span class="zh">证书编号 No. DCDAA00001</span><span class="en">Certification No. DCDAA00001</span> <svg class="cert-ico" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7z"/><circle cx="12" cy="12" r="3"/></svg></a>
+          <span class="cert-pop" role="img" aria-label="DolphinDB 证书预览">
+            <img src="assets/dcdaa_cert.jpg" alt="DolphinDB Certification 证书 — 王灿霖 DolphinDB Certified Data Analytics Associate，证书编号 DCDAA00001，2024年03月13日" loading="lazy" />
+            <span class="cert-pop-cap mono"><span class="zh">点击查看大图</span><span class="en">Click to view full size</span></span>
+          </span>
+        </span>
+        <p><span class="zh">期货从业资格证书；英语四六级、托福。</span><span class="en">Plus futures practitioner license; CET-4/6 and TOEFL.</span></p>
+      </article>
+
+      <article class="card reveal">
+        <span class="card-tag"><span class="zh">竞赛</span><span class="en">Competition</span></span>
+        <h3><span class="zh">港科大量化比赛 · 二等奖</span><span class="en">HKUST Quant Competition · 2nd prize</span></h3>
+        <p><span class="zh">基于 VIX 期货 Contango/Backwardation 结构，对 S&amp;P500 成分股与期权对冲获取波动率溢价。</span><span class="en">VIX futures Contango/Backwardation structure to hedge S&amp;P500 constituents &amp; options for volatility premium.</span></p>
+      </article>
+
+      <article class="card reveal">
+        <span class="card-tag"><span class="zh">竞赛</span><span class="en">Awards</span></span>
+        <h3><span class="zh">挑战杯 · 工行杯等多项奖项</span><span class="en">Challenge Cup &amp; ICBC Cup awards</span></h3>
+        <p><span class="zh">挑战杯国家级 / 省市级 / 校级三等奖、工行杯金融科技校二等奖、互联网创新实践大赛三等奖。</span><span class="en">Challenge Cup (national/provincial/school) 3rd prizes, ICBC FinTech Cup 2nd, Internet innovation contest 3rd.</span></p>
+      </article>
+
+      <article class="card reveal">
+        <span class="card-tag"><span class="zh">社团</span><span class="en">Community</span></span>
+        <h3><span class="zh">SAIFSA 上海高金量化俱乐部</span><span class="en">SAIFSA Quant Club</span></h3>
+        <p><span class="zh">会员，参与量化夏令营与多次俱乐部活动及比赛。</span><span class="en">Member — quant summer camp, club events and competitions.</span></p>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- ===== news / 动态 ===== -->
+<section class="section" id="news">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">05 / <span class="zh">近期动态</span><span class="en">Recent news</span></span>
+      <h2 class="section-title"><span class="zh">项目与成果时间线</span><span class="en">A running log of projects &amp; milestones</span></h2>
+    </div>
+    <ol class="newsfeed reveal">
+      <li class="news-item">
+        <span class="news-date mono">2026.06</span>
+        <div class="news-body">
+          <p><span class="zh"><strong>DolphinDB 期货数据流案例代码提前开源</strong>——《实时期货数据获取与响应式计算引擎级联案例》代码已推送至 GitHub（CCAAFF/DolphinDB-Futures-DataFlow）。</span><span class="en"><strong>DolphinDB futures data-flow case open-sourced ahead of schedule</strong> — code for the real-time futures acquisition &amp; reactive engine-cascade case pushed to GitHub (CCAAFF/DolphinDB-Futures-DataFlow).</span></p>
+        </div>
+      </li>
+      <li class="news-item">
+        <span class="news-date mono">2026.05</span>
+        <div class="news-body">
+          <p><span class="zh"><strong>重构本地 DolphinDB 运行流程图</strong>，采用深色主题重新绘制“数据接入 → 清洗 → 因子计算 → 信号生成 → 回测 → 结果分析”全链路。</span><span class="en"><strong>Redesigned the local DolphinDB pipeline diagram</strong> — a dark-themed redraw of the full ingest → clean → factor → signal → backtest → analysis flow.</span></p>
+        </div>
+      </li>
+      <li class="news-item">
+        <span class="news-date mono">2025.06</span>
+        <div class="news-body">
+          <p><span class="zh"><strong>本科毕业论文完成</strong>——《基于流式引擎的订单簿买卖压力差量化策略》，指导老师池文涛，从上期所 Simnow 实时行情到策略回测全部落地。</span><span class="en"><strong>Completed undergraduate thesis</strong> — “Order-book bid-ask pressure strategy on a streaming engine” (advisor: Chi Wentao), end-to-end from Simnow real-time data to strategy backtest.</span></p>
+        </div>
+      </li>
+      <li class="news-item">
+        <span class="news-date mono">2025.06</span>
+        <div class="news-body">
+          <p><span class="zh"><strong>以 DolphinDB 案例组长参与著作</strong>《AI 驱动下的高频因子挖掘》，负责 DolphinDB 案例与代码部分（预计 2026 年底出版）。</span><span class="en"><strong>Co-authored a quant book as DolphinDB case lead</strong> — “AI-Driven High-Frequency Factor Mining”, owning the DolphinDB cases &amp; code (expected late 2026).</span></p>
+        </div>
+      </li>
+      <li class="news-item">
+        <span class="news-date mono">2025.06</span>
+        <div class="news-body">
+          <p><span class="zh"><strong>本科毕业</strong>于上海立信会计金融学院金融科技专业（GPA 3.60/4.00），获 DCDAA 认证。</span><span class="en"><strong>Graduated</strong> in FinTech from Shanghai Lixin University (GPA 3.60/4.00); earned the DCDAA certification.</span></p>
+        </div>
+      </li>
+    </ol>
+  </div>
+</section>
+
+<!-- ===== growth cv / 成长记录 ===== -->
+<section class="section" id="growth">
+  <div class="wrap">
+    <div class="section-head reveal">
+      <span class="eyebrow">06 / <span class="zh">成长记录</span><span class="en">Growth CV</span></span>
+      <h2 class="section-title"><span class="zh">走过的弯路与在追的目标</span><span class="en">The detours I took &amp; the goals I'm chasing</span></h2>
+      <p><span class="zh">借鉴「Failure CV」的应对思路：诚实记录受挫与复盘，比一张只有光环的简历更真实。</span><span class="en">In the spirit of the “Failure CV” — an honest record of setbacks and lessons, which says more than a flawless resume.</span></p>
+    </div>
+    <div class="growth-grid">
+      <article class="growth-card reveal">
+        <h4><span class="zh">走过的弯路</span><span class="en">Detours &amp; setbacks</span></h4>
+        <ul class="growth-list">
+          <li><span class="gy mono">2023</span> <span class="zh">初入量化时从多段短期实习起步，走过“哪都接触、何都不精”的路，后才收敛到订单簿与高频方向。</span><span class="en">Started with several short internships and spread myself thin before focusing on order-book microstructure &amp; HFT.</span></li>
+          <li><span class="gy mono">2024</span> <span class="zh">DolphinDB 引擎级联与 @jit 性能调优反复调试多日，踩过流表内存与时间对齐的坑，最终才跑通实时链路。</span><span class="en">Spent days debugging DolphinDB engine cascading &amp; @jit perf — hit stream-table memory and time-alignment pitfalls before the real-time pipeline finally ran.</span></li>
+          <li><span class="gy mono">2025</span> <span class="zh">英语与海外申请起步较晚，托福 / 四六级仍在冲刺中，是现阶段明确的短板。</span><span class="en">Started English &amp; overseas applications late — TOEFL/CET still in progress, a known gap I'm closing.</span></li>
+        </ul>
+      </article>
+      <article class="growth-card reveal">
+        <h4><span class="zh">在追的目标</span><span class="en">What I'm chasing</span></h4>
+        <ul class="growth-list">
+          <li><span class="gy mono">NOW</span> <span class="zh">打磨订单簿因子与响应式引擎的工程细节，持续开源与补充文档。</span><span class="en">Polishing order-book factors &amp; reactive-engine engineering, keeping the work open-sourced and documented.</span></li>
+          <li><span class="gy mono">2026</span> <span class="zh">冲刺托福目标分数，准备海外量化 / 金融工程方向的研究生申请。</span><span class="en">Hitting my target TOEFL score and preparing graduate applications for overseas quant / financial-engineering programs.</span></li>
+          <li><span class="gy mono">NEXT</span> <span class="zh">成为能从微观结构、因子到系统工程全链落地的高频量化开发者。</span><span class="en">Becoming an HFT quant dev who ships end-to-end — from microstructure &amp; factors to production system engineering.</span></li>
+        </ul>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ===== contact ===== -->
+<section class="section" id="contact">
+  <div class="wrap contact reveal">
+    <span class="eyebrow" style="justify-content:center">05 / <span class="zh">联系</span><span class="en">Contact</span></span>
+    <h2 style="margin-top:var(--space-4)"><span class="zh">一起聊聊高频量化与交易系统</span><span class="en">Let's talk HFT &amp; trading systems</span></h2>
+    <p><span class="zh">求职高频量化相关职业，欢迎就量化研究、DolphinDB 与高频系统开发交流合作。</span><span class="en">Seeking HFT quant roles — open to chat about quant research, DolphinDB and high-frequency system development.</span></p>
+
+    <div class="bizcard reveal" aria-label="中信建投证券 名片 / China Securities business card">
+      <div class="bizcard-sheen"></div>
+      <div class="bizcard-top">
+        <span class="bizcard-firm">
+          <img class="bizcard-logo" src="assets/csc_emblem.png" alt="中信建投证券 CITIC emblem" width="36" height="36" loading="lazy" />
+          <span class="zh">中信建投证券</span><span class="en">China Securities Co., Ltd.</span>
+        </span>
+        <span class="bizcard-chip mono">CSC</span>
+      </div>
+      <div class="bizcard-body">
+        <span class="bizcard-name"><span class="zh">王灿霖</span><span class="en">Wang Canlin</span></span>
+        <div class="bizcard-meta mono">
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg> caiyunjianm@163.com</span>
+          <span><svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0 1 18 0Z"/><circle cx="12" cy="10" r="3"/></svg> <span class="zh">北京市朝阳区建国门外大街 19 号</span><span class="en">19 Jianguomenwai Ave, Chaoyang, Beijing</span></span>
+        </div>
+      </div>
+    </div>
+
+    <div class="contact-links">
+      <a class="clink" href="mailto:caiyunjianm@163.com">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="m22 7-10 6L2 7"/></svg>
+        caiyunjianm@163.com
+      </a>
+      <a class="clink" href="https://github.com/CCAAFF" target="_blank" rel="noopener">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2C6.48 2 2 6.58 2 12.25c0 4.53 2.87 8.37 6.84 9.73.5.09.68-.22.68-.49 0-.24-.01-.88-.01-1.73-2.78.62-3.37-1.37-3.37-1.37-.45-1.18-1.11-1.49-1.11-1.49-.91-.64.07-.62.07-.62 1 .07 1.53 1.05 1.53 1.05.89 1.56 2.34 1.11 2.91.85.09-.66.35-1.11.63-1.36-2.22-.26-4.56-1.14-4.56-5.07 0-1.12.39-2.03 1.03-2.75-.1-.26-.45-1.3.1-2.71 0 0 .84-.27 2.75 1.05A9.36 9.36 0 0 1 12 6.85c.85 0 1.71.12 2.51.34 1.91-1.32 2.75-1.05 2.75-1.05.55 1.41.2 2.45.1 2.71.64.72 1.03 1.63 1.03 2.75 0 3.94-2.34 4.81-4.57 5.06.36.32.68.94.68 1.9 0 1.37-.01 2.48-.01 2.82 0 .27.18.59.69.49A10.02 10.02 0 0 0 22 12.25C22 6.58 17.52 2 12 2Z"/></svg>
+        GitHub
+      </a>
+    </div>
+  </div>
+</section>
+</main>
+
+<footer class="footer">
+  <div class="wrap footer-in">
+    <span>© <span id="year"></span> 王灿霖 Jason · HFT Quant Developer</span>
+    <span class="zh">DolphinDB / Python / C++ · 北京</span>
+    <span class="en">Built with DolphinDB / Python / C++ · Beijing</span>
+  </div>
+</footer>
+
+<script src="js/main.js"></script>
+<script data-pplx-inline-edit>
+(function () {
+  if (window === window.top) return;
+
+  const allowedParentOrigins = ["https://www.perplexity.ai","https://perplexity.ai","https://testing.perplexity.ai","https://staging.perplexity.ai","https://*.preview.i.perplexity.ai","http://localhost:3000","http://127.0.0.1:3000","http://localhost:5173","http://127.0.0.1:5173"];
+  const MAX_FONT_BYTES = 500 * 1024;
+  const MAX_TOTAL_FONT_BYTES = 2 * 1024 * 1024;
+  let scrollForwarding = false;
+  let scrollRaf = 0;
+  let trustedTopOrigin = null;
+
+  // Allow entries like "https://*.preview.i.perplexity.ai" — the wildcard
+  // matches a single DNS label (no dots), so "https://*.foo" cannot stretch
+  // across multiple labels.
+  function matchesAllowedOrigin(origin) {
+    if (!origin) return false;
+    for (const entry of allowedParentOrigins) {
+      if (!entry.includes("*")) {
+        if (entry === origin) return true;
+        continue;
+      }
+      const pattern = new RegExp(
+        "^" +
+          entry.replace(/[.+?^${}()|[\]\\]/g, "\\$&").replace(/\*/g, "[^.]+") +
+          "$",
+      );
+      if (pattern.test(origin)) return true;
+    }
+    return false;
+  }
+
+  // Trust decision: when the sender is same-origin-visible (event.origin is a
+  // real origin like https://www.perplexity.ai) we trust event.origin directly.
+  // When event.origin is "null" (opaque broker srcdoc), we fall back to the
+  // broker's stamped `parentOrigin` to identify the top window. The fallback
+  // is claim-only — we rely on the browser's native `targetOrigin` enforcement
+  // on the response path (see postToTrustedTop) to ensure replies can't be
+  // delivered to anyone but the actual top window of that claimed origin.
+  function getTrustedParentOrigin(event) {
+    const forwardedParentOrigin =
+      typeof event.data.parentOrigin === "string" ? event.data.parentOrigin : null;
+    const parentOrigin = event.origin === "null" ? forwardedParentOrigin : event.origin;
+    return matchesAllowedOrigin(parentOrigin) ? parentOrigin : null;
+  }
+
+  // All responses go to window.top with targetOrigin = the allowlisted origin.
+  // An attacker that iframes us inside their own null-origin broker can claim
+  // any parentOrigin they like, but the browser will drop the reply whenever
+  // the real top's origin doesn't match — so the screenshot never leaves.
+  function postToTrustedTop(message) {
+    if (!trustedTopOrigin) return;
+    try {
+      window.top.postMessage(message, trustedTopOrigin);
+    } catch (_error) {}
+  }
+
+  function inlineAll(original, clone) {
+    if (original.nodeType !== 1 || clone.nodeType !== 1) return;
+
+    try {
+      const computedStyle = getComputedStyle(original);
+      // cssText on a computed style is the serialized declaration in modern
+      // Chromium/Safari — a single read beats enumerating ~400 longhand
+      // properties. Firefox returns "" here, so we fall back on empty.
+      const serialized = computedStyle.cssText;
+      if (serialized) {
+        clone.style.cssText = serialized;
+      } else {
+        const parts = new Array(computedStyle.length);
+        for (let index = 0; index < computedStyle.length; index += 1) {
+          const property = computedStyle[index];
+          parts[index] = `${property}:${computedStyle.getPropertyValue(property)};`;
+        }
+        clone.style.cssText = parts.join("");
+      }
+    } catch (_error) {}
+
+    const originalChildren = original.children;
+    const clonedChildren = clone.children;
+    for (
+      let index = 0;
+      index < originalChildren.length && index < clonedChildren.length;
+      index += 1
+    ) {
+      inlineAll(originalChildren[index], clonedChildren[index]);
+    }
+  }
+
+  function extractFontUrl(srcValue) {
+    const matches = [
+      ...srcValue.matchAll(
+        /url\(["']?([^"')]+)["']?\)(?:\s*format\(["']?([^"')]+)["']?\))?/gi,
+      ),
+    ];
+    if (matches.length === 0) return null;
+    const woff2 = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff2"));
+    if (woff2) return woff2[1];
+    const woff = matches.find((m) => m[2] && m[2].toLowerCase().includes("woff"));
+    if (woff) return woff[1];
+    return matches[0][1];
+  }
+
+  // Cache resolved font URL -> data URI across captures. Fonts on a page
+  // essentially never change, and a batch run emits multiple captures back to
+  // back — without this we'd refetch + re-base64 every time.
+  const fontDataUriCache = new Map();
+  const SRC_DECLARATION_RE = /src\s*:\s*[^;}]+/i;
+
+  async function fetchAsDataUri(url) {
+    if (fontDataUriCache.has(url)) return fontDataUriCache.get(url);
+    let dataUri = null;
+    try {
+      const response = await fetch(url, { mode: "cors", credentials: "omit" });
+      if (response.ok) {
+        const blob = await response.blob();
+        if (blob.size <= MAX_FONT_BYTES) {
+          dataUri = await new Promise((resolve) => {
+            const reader = new FileReader();
+            reader.onloadend = () =>
+              resolve(typeof reader.result === "string" ? reader.result : null);
+            reader.onerror = () => resolve(null);
+            reader.readAsDataURL(blob);
+          });
+        }
+      }
+    } catch (_error) {
+      dataUri = null;
+    }
+    fontDataUriCache.set(url, dataUri);
+    return dataUri;
+  }
+
+  function collectFontFaceRuleTexts() {
+    const rules = [];
+    for (const sheet of document.styleSheets) {
+      let cssRules;
+      try {
+        cssRules = sheet.cssRules;
+      } catch (_error) {
+        continue;
+      }
+      if (!cssRules) continue;
+      for (const rule of cssRules) {
+        const cssText = rule.cssText || "";
+        if (cssText.startsWith("@font-face")) rules.push(cssText);
+      }
+    }
+    return rules;
+  }
+
+  async function buildInlinedFontCss() {
+    const ruleTexts = collectFontFaceRuleTexts();
+    if (ruleTexts.length === 0) return null;
+
+    const resolved = ruleTexts.map((cssText) => {
+      if (!SRC_DECLARATION_RE.test(cssText)) return null;
+      const srcMatch = cssText.match(/src\s*:\s*([^;}]+)[;}]/i);
+      if (!srcMatch) return null;
+      const url = extractFontUrl(srcMatch[1]);
+      if (!url) return null;
+      try {
+        return { cssText, url: new URL(url, document.baseURI).href };
+      } catch (_error) {
+        return null;
+      }
+    });
+
+    const dataUris = await Promise.all(
+      resolved.map((entry) => (entry ? fetchAsDataUri(entry.url) : Promise.resolve(null))),
+    );
+
+    const inlined = [];
+    let totalBytes = 0;
+    for (let index = 0; index < resolved.length; index += 1) {
+      const entry = resolved[index];
+      const dataUri = dataUris[index];
+      if (!entry || !dataUri) continue;
+      const approxBytes = dataUri.length * 0.75;
+      if (totalBytes + approxBytes > MAX_TOTAL_FONT_BYTES) break;
+      totalBytes += approxBytes;
+      inlined.push(entry.cssText.replace(SRC_DECLARATION_RE, `src: url("${dataUri}")`));
+    }
+    return inlined.length > 0 ? inlined.join("\n") : null;
+  }
+
+  function stripExternal(clone) {
+    const images = clone.querySelectorAll("img");
+    for (let index = 0; index < images.length; index += 1) {
+      const src = images[index].getAttribute("src");
+      if (src && !src.startsWith("data:")) images[index].removeAttribute("src");
+    }
+
+    const elements = clone.querySelectorAll("*");
+    for (let index = 0; index < elements.length; index += 1) {
+      const style = elements[index].style.cssText;
+      if (style && style.includes("url(")) {
+        elements[index].style.cssText = style.replace(
+          /url\(["']?(?!data:)[^)"']*["']?\)/gi,
+          "none",
+        );
+      }
+    }
+  }
+
+  function emitScroll() {
+    scrollRaf = 0;
+    if (!scrollForwarding) return;
+    postToTrustedTop({
+      type: "INLINE_EDIT_SCROLL",
+      scrollX: window.scrollX,
+      scrollY: window.scrollY,
+    });
+  }
+
+  window.addEventListener(
+    "scroll",
+    function () {
+      if (!scrollForwarding || scrollRaf) return;
+      scrollRaf = requestAnimationFrame(emitScroll);
+    },
+    { passive: true, capture: true },
+  );
+
+  async function handleCaptureRequest(event) {
+    const requestId = event.data.requestId;
+    const scrollX = window.scrollX;
+    const scrollY = window.scrollY;
+    const width = window.innerWidth;
+    const height = window.innerHeight;
+
+    function postResult(dataUrl) {
+      postToTrustedTop({
+        type: "INLINE_EDIT_SCREENSHOT_RESULT",
+        requestId,
+        dataUrl,
+        scrollX,
+        scrollY,
+      });
+    }
+
+    try {
+      // Wait for any pending web fonts to resolve so both inline metrics and
+      // the @font-face inlining below see the same loaded faces.
+      if (document.fonts && document.fonts.ready) {
+        try {
+          await document.fonts.ready;
+        } catch (_error) {}
+      }
+
+      const clone = document.documentElement.cloneNode(true);
+      inlineAll(document.documentElement, clone);
+
+      const removedNodes = clone.querySelectorAll("script,link[rel=\"stylesheet\"],style");
+      for (let index = 0; index < removedNodes.length; index += 1) {
+        removedNodes[index].remove();
+      }
+
+      stripExternal(clone);
+
+      // Re-embed web fonts as data-URI @font-face rules so the SVG rasterizer
+      // can resolve them — external font URLs aren't fetched during
+      // foreignObject rendering, which would otherwise force a fallback face
+      // and change text metrics.
+      const inlinedFontCss = await buildInlinedFontCss();
+      if (inlinedFontCss) {
+        const styleEl = document.createElement("style");
+        styleEl.textContent = inlinedFontCss;
+        const head = clone.querySelector("head");
+        if (head) head.appendChild(styleEl);
+        else clone.insertBefore(styleEl, clone.firstChild);
+      }
+
+      const html = new XMLSerializer().serializeToString(clone);
+      const svg =
+        `<svg xmlns="http://www.w3.org/2000/svg" width="${width}" height="${height}">` +
+        '<foreignObject width="100%" height="100%">' +
+        `<div xmlns="http://www.w3.org/1999/xhtml" style="width:${width}px;height:${height}px;overflow:hidden">` +
+        `<div style="position:relative;left:-${scrollX}px;top:-${scrollY}px">` +
+        html +
+        "</div></div></foreignObject></svg>";
+      const svgUrl = `data:image/svg+xml;charset=utf-8,${encodeURIComponent(svg)}`;
+      const image = new Image();
+      image.onload = function () {
+        const canvas = document.createElement("canvas");
+        canvas.width = width;
+        canvas.height = height;
+        canvas.getContext("2d").drawImage(image, 0, 0);
+        postResult(canvas.toDataURL("image/png"));
+      };
+      image.onerror = function () {
+        postResult(null);
+      };
+      image.src = svgUrl;
+    } catch (_error) {
+      postResult(null);
+    }
+  }
+
+  window.addEventListener("message", function (event) {
+    if (!event.data) return;
+    // Only accept messages from the direct parent frame. Blocks sibling /
+    // unrelated-window postMessage senders that could otherwise reach us.
+    if (event.source !== window.parent) return;
+
+    const trustedParentOrigin = getTrustedParentOrigin(event);
+    if (!trustedParentOrigin) return;
+    trustedTopOrigin = trustedParentOrigin;
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_START") {
+      scrollForwarding = true;
+      emitScroll();
+      return;
+    }
+
+    if (event.data.type === "INLINE_EDIT_SCROLL_STOP") {
+      scrollForwarding = false;
+      if (scrollRaf) cancelAnimationFrame(scrollRaf);
+      scrollRaf = 0;
+      return;
+    }
+
+    if (event.data.type !== "INLINE_EDIT_CAPTURE_REQUEST") return;
+
+    handleCaptureRequest(event);
+  });
+})();
+
+
+</script></body>
+</html>
