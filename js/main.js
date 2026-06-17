@@ -78,3 +78,27 @@ document.querySelectorAll('[data-carousel]').forEach((root) => {
   }, { passive: true });
   go(0);
 });
+
+// avatar easter-egg: click 5x to reveal the art portrait for 3s, then revert
+(function () {
+  const egg = document.getElementById('avatarEgg');
+  if (!egg) return;
+  const NEED = 5;        // clicks to trigger
+  const HOLD = 3000;     // ms to stay in art mode
+  const WINDOW = 1200;   // ms inactivity window before count resets
+  let clicks = 0, active = false, timer = null, resetT = null;
+
+  egg.addEventListener('click', () => {
+    if (active) return;                 // ignore while showing art
+    clicks++;
+    clearTimeout(resetT);
+    resetT = setTimeout(() => { clicks = 0; }, WINDOW);
+    if (clicks >= NEED) {
+      clicks = 0;
+      active = true;
+      egg.classList.add('egg');
+      clearTimeout(timer);
+      timer = setTimeout(() => { egg.classList.remove('egg'); active = false; }, HOLD);
+    }
+  });
+})();
