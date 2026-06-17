@@ -516,3 +516,56 @@ a.sbadge:hover{border-color:var(--accent);color:var(--accent);transform:translat
 /* gentle hover lift for the flowchart figure (matches site language) */
 .figure img{transition:opacity .7s ease,transform .7s cubic-bezier(.22,.61,.36,1),box-shadow var(--transition)}
 .figure:hover img{box-shadow:0 18px 44px -18px rgba(0,0,0,.6)}
+
+/* ===== hero portrait + click easter-egg ===== */
+.hero-wrap{display:flex;align-items:center;gap:clamp(2rem,5vw,5rem);justify-content:space-between}
+.hero-main{flex:1 1 auto;min-width:0}
+.hero-portrait{flex:0 0 auto;display:flex;flex-direction:column;align-items:center;gap:var(--space-3)}
+.portrait-frame{
+  position:relative;width:clamp(180px,17vw,248px);aspect-ratio:1/1;border-radius:20px;
+  cursor:pointer;-webkit-tap-highlight-color:transparent;user-select:none;
+  border:1px solid var(--border-bright);background:var(--surface);
+  box-shadow:0 10px 40px rgba(0,0,0,.45);overflow:hidden;
+  transition:transform .35s cubic-bezier(.2,.7,.2,1),box-shadow .35s ease;
+}
+.portrait-frame:hover{transform:translateY(-4px);box-shadow:0 16px 48px rgba(0,0,0,.5),0 0 0 1px var(--accent-dim)}
+.portrait-frame:active{transform:scale(.97)}
+.portrait-frame img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block}
+.portrait-frame .pf-real{opacity:1;transition:opacity .45s ease,transform .45s ease;z-index:1}
+.portrait-frame .pf-art{
+  opacity:0;transform:scale(1.06);transition:opacity .45s ease,transform .45s ease;z-index:2;
+  /* art portrait sits one notch smaller, framed in red */
+  inset:9%;width:82%;height:82%;border-radius:14px;
+  border:3px solid #b23a3a;box-shadow:0 0 0 1px rgba(0,0,0,.4) inset,0 0 26px rgba(178,58,58,.55);
+  background:#b23a3a;
+}
+/* subtle cyan ring glow on the frame */
+.portrait-frame .pf-ring{
+  position:absolute;inset:-2px;border-radius:22px;z-index:3;pointer-events:none;
+  box-shadow:0 0 0 1px var(--accent-dim),0 0 22px var(--accent-glow);
+  opacity:.55;transition:opacity .4s ease;
+}
+.portrait-frame:hover .pf-ring{opacity:.9}
+
+/* easter-egg active state */
+.portrait-frame.egg .pf-real{opacity:0;transform:scale(.94)}
+.portrait-frame.egg .pf-art{opacity:1;transform:scale(1)}
+.portrait-frame.egg{
+  border-color:#b23a3a;
+  box-shadow:0 16px 48px rgba(178,58,58,.4),0 0 0 1px #b23a3a;
+  animation:eggShake .5s ease;
+}
+.portrait-frame.egg .pf-ring{box-shadow:0 0 0 1px #b23a3a,0 0 24px rgba(178,58,58,.5);opacity:.85}
+@keyframes eggShake{0%,100%{transform:translateX(0)}20%{transform:translateX(-4px) rotate(-1deg)}40%{transform:translateX(4px) rotate(1deg)}60%{transform:translateX(-3px)}80%{transform:translateX(3px)}}
+
+.pf-hint{font-size:var(--text-xs);color:var(--text-muted);opacity:.6;letter-spacing:.02em}
+
+/* mobile: portrait stacks under the text, slightly smaller */
+@media(max-width:880px){
+  .hero-wrap{flex-direction:column-reverse;align-items:flex-start;gap:var(--space-8)}
+  .hero-portrait{align-self:center}
+  .portrait-frame{width:clamp(150px,42vw,200px)}
+}
+@media (prefers-reduced-motion:reduce){
+  .portrait-frame.egg{animation:none}
+}
