@@ -572,8 +572,11 @@ a.sbadge:hover{border-color:var(--accent);color:var(--accent);transform:translat
 }
 
 /* business-card avatar (replaces former firm emblem) */
-.bizcard-avatar{border-radius:50%;object-fit:cover;border:1px solid var(--border-bright);
+.bizcard-avatar{border-radius:50%;object-fit:cover;object-position:center 18%;
+  border:1px solid var(--border-bright);
   box-shadow:0 0 0 2px var(--surface),0 0 12px var(--accent-glow)}
+/* nudge contact links down one line for vertical breathing room */
+.bizcard-meta{margin-top:var(--space-6)}
 
 /* clickable links inside the business card */
 .bizcard-link{display:flex;align-items:center;gap:var(--space-2);color:var(--text);
