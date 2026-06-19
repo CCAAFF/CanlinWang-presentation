@@ -569,3 +569,7 @@ a.sbadge:hover{border-color:var(--accent);color:var(--accent);transform:translat
 @media (prefers-reduced-motion:reduce){
   .portrait-frame.egg{animation:none}
 }
+
+/* business-card avatar (replaces former firm emblem) */
+.bizcard-avatar{border-radius:50%;object-fit:cover;border:1px solid var(--border-bright);
+  box-shadow:0 0 0 2px var(--surface),0 0 12px var(--accent-glow)}
