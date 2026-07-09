@@ -472,8 +472,14 @@ a.sbadge:hover{border-color:var(--accent);color:var(--accent);transform:translat
 .about-right{display:flex;flex-direction:column;gap:var(--space-8)}
 .cert-showcase{margin:0;position:relative;border-radius:14px;padding:4px;background:linear-gradient(135deg,#f2d999 0%,#d6b26c 28%,#b8893f 52%,#e8c987 76%,#d6b26c 100%);box-shadow:0 10px 36px rgba(214,178,108,.28),0 2px 10px rgba(0,0,0,.4)}
 .cert-showcase::before{content:"";position:absolute;inset:0;border-radius:14px;padding:4px;background:linear-gradient(135deg,rgba(255,255,255,.55),transparent 40%);pointer-events:none;-webkit-mask:linear-gradient(#000 0 0) content-box,linear-gradient(#000 0 0);-webkit-mask-composite:xor;mask-composite:exclude}
-.cert-showcase a{display:block;border-radius:10px;overflow:hidden;background:#fff}
-.cert-showcase img{width:100%;display:block;transition:transform .4s cubic-bezier(.4,0,.2,1)}
+.cert-stage{display:grid}
+.cert-stage>*{grid-area:1/1}
+.cert-img-wrap{display:block!important;border-radius:10px;overflow:hidden;background:#fff;padding:12px 0;
+  opacity:0;transition:opacity .4s ease}
+.cert-img-wrap.active{opacity:1}
+.cert-shake{animation:certShake .35s ease-in-out}
+@keyframes certShake{0%{transform:translateX(0)}20%{transform:translateX(-4px)}40%{transform:translateX(4px)}60%{transform:translateX(-2px)}80%{transform:translateX(2px)}100%{transform:translateX(0)}}
+.cert-showcase img{max-width:92%;display:block;margin:0 auto;transition:transform .4s cubic-bezier(.4,0,.2,1)}
 .cert-showcase:hover img{transform:scale(1.025)}
 .cert-showcase figcaption{display:flex;flex-direction:column;gap:3px;padding:var(--space-3) var(--space-2) var(--space-1);text-align:center}
 .cert-show-title{font-size:var(--text-sm);font-weight:600;color:#e7c987}
@@ -502,14 +508,14 @@ a.sbadge:hover{border-color:var(--accent);color:var(--accent);transform:translat
    Applies to flowchart, agent portraits, certificate; NOT the GIF carousel. */
 .figure img,
 .agent-carousel .agent img,
-.cert-showcase a{
+.cert-showcase .cert-img-wrap.active{
   opacity:0;transform:translateY(14px) scale(.985);
   transition:opacity .7s ease,transform .7s cubic-bezier(.22,.61,.36,1);
   will-change:opacity,transform;
 }
 .figure.in img,
 .agent-carousel.in .agent img,
-.cert-showcase.in a{opacity:1;transform:none}
+.cert-showcase.in .cert-img-wrap.active{opacity:1;transform:none}
 
 /* keep GIF carousel untouched (no entrance fade on animated frames) */
 .gif-carousel img{opacity:1!important;transform:none!important}

@@ -102,3 +102,20 @@ document.querySelectorAll('[data-carousel]').forEach((root) => {
     }
   });
 })();
+
+// cert showcase: crossfade DCDAP / DCDAA with shake
+(function () {
+  var showcase = document.getElementById('certShowcase');
+  if (!showcase) return;
+  var imgs = showcase.querySelectorAll('.cert-img-wrap');
+  var idx = 0;
+  showcase.style.cursor = 'pointer';
+  showcase.addEventListener('click', function () {
+    imgs[idx].classList.remove('active');
+    idx = (idx + 1) % imgs.length;
+    imgs[idx].classList.add('active');
+    showcase.classList.remove('cert-shake');
+    void showcase.offsetWidth; // reflow to restart animation
+    showcase.classList.add('cert-shake');
+  });
+})();
